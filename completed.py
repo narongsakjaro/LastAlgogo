@@ -15,7 +15,6 @@ def dijkstra(graph, start):
 
     while H:
         _, u = heapq.heappop(H)
-        print(f"{_} + {u}")
         visited.add(u)
         for v in graph[u]:
             if v in visited:
